@@ -29,14 +29,14 @@ def output_array(arr)
   end
 end
 
-describe 'output_array' do
-
-  it 'takes in a message and a number outputs the message that number of times' do
-    array = ["Be yourself;", "everyone else is already taken", "- Oscar Wilde"]
-    expect { output_array(array) }.to output(/Be yourself;\neveryone else is already taken\n- Oscar Wilde/).to_stdout, "Expected:\n\nBe yourself;\neveryone else is already taken\n- Oscar Wilde"
-    array = [5, 4, 3, 2, 1]
-    expect { output_array(array) }.to output(/5\n4\n3\n2\n1\n/).to_stdout
+def return_string_array(arr)
+  x = 0 
+  new_arr = []
+  while arr[x] do
+    new_arr[x] = arr[x].to_s
+    x += 1
   end
+  return new_arr
 end
 
 describe 'return_string_array' do
