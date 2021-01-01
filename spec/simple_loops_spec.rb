@@ -21,6 +21,12 @@ describe 'loop_message_n_times' do
 
 end
 
+def output_array(arr)
+  x = 0
+  while arr[x] do
+    puts arr[x]
+    x +=1 
+
 describe 'output_array' do
 
   it 'takes in a message and a number outputs the message that number of times' do
