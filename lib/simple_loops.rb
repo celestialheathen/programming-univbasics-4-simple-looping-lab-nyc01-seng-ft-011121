@@ -10,17 +10,7 @@ def loop_message_n_times(msg, time)
   end
 end
   
-describe 'loop_message_n_times' do
-  it 'takes in a message and a number outputs the message that number of times' do
-    message = "Hello Moon."
-    number = 5
-    expect { loop_message_n_times(message, number) }.to output(/Hello Moon.\nHello Moon.\nHello Moon.\nHello Moon.\nHello Moon./).to_stdout, "Expected '#{message}' to be output #{number} times"
-    message = "Hello Red Balloon."
-    number = 10
-    expect { loop_message_n_times(message, number) }.to output(/Hello Red Balloon.\nHello Red Balloon.\nHello Red Balloon.\nHello Red Balloon.\nHello Red Balloon.\nHello Red Balloon.\nHello Red Balloon.\nHello Red Balloon.\nHello Red Balloon.\nHello Red Balloon./).to_stdout, "Expected '#{message}' to be output #{number} times using puts"
-  end
 
-end
 
 describe 'output_array' do
 
