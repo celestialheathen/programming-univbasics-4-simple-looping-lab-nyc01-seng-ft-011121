@@ -25,7 +25,9 @@ def output_array(arr)
   x = 0
   while arr[x] do
     puts arr[x]
-    x +=1 
+    x +=1
+  end
+end
 
 describe 'output_array' do
 
